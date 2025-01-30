@@ -1,0 +1,8 @@
+/* Строка поиска */
+.city-list__search {
+    align-items: flex-end;
+}
+
+.city-list__search .custom-input {
+    flex: 1;
+}
