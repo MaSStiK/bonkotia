@@ -1,6 +1,5 @@
-import { useState, useEffect, useContext } from "react"
+import { useState, useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { DataContext } from "../Context"
 import PostsRender from "../PostsRender/PostsRender"
 import PostPreview from "../PostPreview/PostPreview"
 import { setPageTitle } from "../Global"
@@ -23,15 +22,14 @@ import "./HomePage-phone.css"
 
 export default function HomePage() {
     useEffect(() => {setPageTitle("Главная")}, [])
-    const Context = useContext(DataContext)
     const Navigate = useNavigate()
 
     const [Post, setPosts] = useState([]);
 
     useEffect(() => {
         // Перем последнюю новость
-        setPosts([NewsList.reverse()[0]])
-    }, [NewsList]);
+        setPosts([NewsList.at(-1)])
+    }, []);
 
     return (
         <article>

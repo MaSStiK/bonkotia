@@ -15,7 +15,7 @@ export default function NewsPage() {
             <h4 className="page-title">h/news</h4>
 
             <PostsRender
-                posts={NewsList}
+                posts={[...NewsList].reverse()}
             />
         </article>
     )

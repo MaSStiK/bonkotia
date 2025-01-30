@@ -36,26 +36,10 @@ export function CreateContext(Context) {
     Context.PageSettings = ContextPageSettings
     Context.setPageSettings = setContextPageSettings
     
-    
-    // Массив всех юзеров
-    const [ContextUsers, setContextUsers] = useState([]);
-    Context.Users = ContextUsers
-    Context.setUsers = setContextUsers
-
-    // Массив Общего списка загруженных постов
-    const [ContextPosts, setContextPosts] = useState([]);
-    Context.Posts = ContextPosts
-    Context.setPosts = setContextPosts
-
     // Модальное окно
     const [Modal, setModal] = useState({});
     Context.Modal = Modal
     Context.setModal = setModal
-
-    // Offset постов
-    const [PostsOffset, setPostsOffset] = useState(0);
-    Context.PostsOffset = PostsOffset
-    Context.setPostsOffset = setPostsOffset
 
     return Context
 }
