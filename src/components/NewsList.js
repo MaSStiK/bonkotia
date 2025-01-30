@@ -5,8 +5,8 @@ const NewsList = [
         title: "Заголовок новости", // Заголовок новости
         text: "Текст новости", // Текст новости (Можно оставить пустым)
         date: "27.01.2025 • 13:37", // Дата создания поста
-        attach: [ // Массив картинок (Можно оставить пустым)
-            "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY29xYml4Z2J6eTBzOW1vdHphMHB5ZDluMHd2cWk4Z2I5YnFoY2pzeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YQitE4YNQNahy/giphy.gif",
+        attach: [ // Массив ссылок картинок (Можно оставить пустым)
+            "https://cdn.tvspb.ru/storage/wp-content/uploads/2022/10/novosti-1.jpg__0_0x0.jpg",
         ]
     },
     {
